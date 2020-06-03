@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="item"
+            type="String" />
+
+        <variable
+            name="listener"
+            type="com.ducnv1106.demo.base.BaseAdapter.BaseListener" />
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/_5sdp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:onClick="@{v->listener.onItemClicked(position)}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="@{item}"
+                android:id="@+id/tv_subject"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:gravity="center|start"
+                android:paddingStart="@dimen/_25sdp"
+                android:textColor="#3E3B3B"
+                android:textSize="@dimen/_13sdp"
+                tools:text="Vested" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@id/tv_subject"
+                android:background="#4CAF50" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>
