@@ -12,7 +12,6 @@ import java.util.ArrayList;
 public class Bai1Activity extends BaseActivity<ActivityBai1Binding> implements BaseAdapter.BaseListener, Bai1Navigation {
     private ArrayList<String> data;
     private BaseAdapter<String> adapter;
-    private int position;
     @Override
     protected void innitView() {
         initData();
@@ -41,11 +40,17 @@ public class Bai1Activity extends BaseActivity<ActivityBai1Binding> implements B
 
     @Override
     public void onItemClicked(Integer position) {
-        this.position=position;
-        binding.setPosition(position);
         String item=data.get(position);
         Toast.makeText(this,item,Toast.LENGTH_LONG).show();
         binding.edtSubject.setText(item);
+    }
+
+    @Override
+    public boolean onItemLongClicked(Integer position) {
+        String item=data.get(position);
+        data.remove(item);
+        adapter.setData(data);
+        return false;
     }
 
     @Override

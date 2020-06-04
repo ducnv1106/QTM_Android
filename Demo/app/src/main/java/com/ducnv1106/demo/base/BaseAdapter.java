@@ -57,7 +57,7 @@ public class BaseAdapter<T> extends RecyclerView.Adapter<BaseAdapter.BaseViewHol
             T item = data.get(position);
         Log.e("Adapter",data.get(position).toString());
             holder.binding.setVariable(BR.listener,listener);
-             holder.binding.setVariable(BR.position,position);
+             holder.binding.setVariable(BR.position,holder.getAdapterPosition());
             holder.binding.setVariable(BR.item,item);
 
     }
@@ -74,5 +74,6 @@ public class BaseAdapter<T> extends RecyclerView.Adapter<BaseAdapter.BaseViewHol
 
     public interface BaseListener{
         public void onItemClicked(Integer position);
+        public boolean onItemLongClicked(Integer position);
     }
 }
