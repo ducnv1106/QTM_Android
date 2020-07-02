@@ -40,6 +40,7 @@ public class Bai1Activity extends BaseActivity<ActivityBai1Binding> implements B
 
     @Override
     public void onItemClicked(Integer position) {
+        binding.setPosition(position);
         String item=data.get(position);
         Toast.makeText(this,item,Toast.LENGTH_LONG).show();
         binding.edtSubject.setText(item);

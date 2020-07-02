@@ -19,10 +19,12 @@
 
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
+
         android:layout_height="wrap_content"
         app:cardElevation="@dimen/_5sdp">
 
         <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="#E19191"
             android:onLongClick="@{v->listener.onItemLongClicked(position)}"
             android:onClick="@{v->listener.onItemClicked(position)}"
             android:layout_width="match_parent"

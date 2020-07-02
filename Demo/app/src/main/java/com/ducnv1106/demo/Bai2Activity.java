@@ -19,15 +19,13 @@ public class Bai2Activity extends BaseActivity<ActivityBai2Binding> {
 
     private void initData() {
         data=new ArrayList<>();
-        data.add(new Fruit(R.drawable.quaduahau,"Dưa hấu","Dưa hấu ăn mát"));
-        data.add(new Fruit(R.drawable.quatao,"Trái ","Trái táo ăn rất thơm"));
-        data.add(new Fruit(R.drawable.quaduahau,"Dưa hấu","Dưa hấu ăn mát"));
-        data.add(new Fruit(R.drawable.quaduahau,"Dưa hấu","Dưa hấu ăn mát"));
-        data.add(new Fruit(R.drawable.quatao,"Trái ","Trái táo ăn rất thơm"));
-        data.add(new Fruit(R.drawable.quaduahau,"Dưa hấu","Dưa hấu ăn mát"));
-        data.add(new Fruit(R.drawable.quaduahau,"Dưa hấu","Dưa hấu ăn mát"));
-        data.add(new Fruit(R.drawable.quatao,"Trái ","Trái táo ăn rất thơm"));
-        data.add(new Fruit(R.drawable.quaduahau,"Dưa hấu","Dưa hấu ăn mát"));
+        data.add(new Fruit(R.drawable.bo,"Gà ","Gà Nướng "));
+        data.add(new Fruit(R.drawable.bo,"Bò ","Bò xào sả "));
+        data.add(new Fruit(R.drawable.bo,"Dê","Dê Luộc"));
+        data.add(new Fruit(R.drawable.cachep,"Rắn ","Rắn nướng "));
+        data.add(new Fruit(R.drawable.chuot,"Chuột  ","Chuột đồng hấp bia "));
+        data.add(new Fruit(R.drawable.chuot,"Rết ","Gỏi rết "));
+     
     }
 
 
