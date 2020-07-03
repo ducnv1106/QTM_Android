@@ -25,11 +25,11 @@ public class Bai1Activity extends BaseActivity<ActivityBai1Binding> implements B
 
     public void initData() {
         data=new ArrayList<>();
-        data.add("Visual Studio.net");
-        data.add("Lập Trình Android");
-        data.add("Lập Trình C++");
-        data.add("Mã Nguồn Mở");
-        data.add("SQL Sever");
+        data.add("Sách Tin học");
+        data.add("Sách giáo khoa");
+        data.add("Sách tham khảo");
+        data.add("Sách Văn Học");
+
     }
 
 

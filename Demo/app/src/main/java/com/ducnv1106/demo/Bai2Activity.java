@@ -19,12 +19,10 @@ public class Bai2Activity extends BaseActivity<ActivityBai2Binding> {
 
     private void initData() {
         data=new ArrayList<>();
-        data.add(new Fruit(R.drawable.bo,"Gà ","Gà Nướng "));
-        data.add(new Fruit(R.drawable.bo,"Bò ","Bò xào sả "));
-        data.add(new Fruit(R.drawable.bo,"Dê","Dê Luộc"));
-        data.add(new Fruit(R.drawable.cachep,"Rắn ","Rắn nướng "));
-        data.add(new Fruit(R.drawable.chuot,"Chuột  ","Chuột đồng hấp bia "));
-        data.add(new Fruit(R.drawable.chuot,"Rết ","Gỏi rết "));
+        data.add(new Fruit(R.drawable.vietnam,"Vietnam ","Popuaton:98000D"));
+        data.add(new Fruit(R.drawable.my," My","Popuaton:3200000USD"));
+        data.add(new Fruit(R.drawable.thailan,"Thai Lan","Popuaton:1420000"));
+
      
     }
 

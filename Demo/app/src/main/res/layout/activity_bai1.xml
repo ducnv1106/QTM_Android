@@ -13,16 +13,22 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-
+    <androidx.appcompat.widget.Toolbar
+        android:background="#56B8EC"
+        android:id="@+id/toolbar"
+        app:title="ListeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.appcompat.widget.Toolbar>
         <androidx.appcompat.widget.AppCompatEditText
+            android:layout_marginTop="@dimen/_30sdp"
             android:id="@+id/edt_subject"
-            android:layout_width="250dp"
-            android:layout_height="64dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="@dimen/_50sdp"
             android:layout_marginEnd="@dimen/_50sdp"
             android:background="@null"
             android:gravity="center"
-            android:hint="Mon an"
+            android:hint="Mon hoc"
             android:textColor="#3E3B3B"
             android:textColorHint="#D0CDCD"
             android:textSize="@dimen/_15sdp"
@@ -36,42 +42,38 @@
             android:layout_alignStart="@id/edt_subject"
             android:layout_alignEnd="@id/edt_subject"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="-40dp"
             android:background="#E80707" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="@dimen/_10sdp"
             android:id="@+id/btn_add"
-            android:layout_width="171dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/view"
             android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginTop="-31dp"
             android:background="#B71C1C"
             android:onClick="@{v->navigation.onAddClicked()}"
-            android:paddingStart="@dimen/_20sdp"
+            android:paddingStart="@dimen/_30sdp"
             android:paddingTop="@dimen/_10sdp"
-            android:paddingEnd="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_30sdp"
             android:paddingBottom="@dimen/_10sdp"
             android:text="THEM"
             android:textColor="#fff" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:id="@+id/btn_update"
-            android:layout_width="175dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/btn_add"
-            android:layout_alignParentStart="true"
+            android:layout_below="@id/view"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="211dp"
+            android:paddingStart="@dimen/_30sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_30sdp"
+            android:paddingBottom="@dimen/_10sdp"
             android:background="#B71C1C"
             android:onClick="@{v->navigation.onUpdateClicked(position)}"
-            android:paddingStart="@dimen/_20sdp"
-            android:paddingTop="@dimen/_10sdp"
-            android:paddingEnd="@dimen/_20sdp"
-            android:paddingBottom="@dimen/_10sdp"
             android:text="Update"
             android:textColor="#fff" />
 
@@ -80,7 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="522dp"
             android:layout_below="@id/btn_add"
-            android:layout_marginTop="71dp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             tools:listitem="@layout/item_bai1" />
